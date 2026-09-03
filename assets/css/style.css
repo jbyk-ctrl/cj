@@ -246,6 +246,31 @@ footer.site{background:var(--navy);color:var(--on-navy-body);padding:56px 0 28px
 
 .badge-inline{display:inline-block;background:var(--paper);color:var(--meta);font-size:.72rem;padding:4px 10px;border-radius:100px;}
 
+/* ---- bullet list (subsidy programs, sub-items) ---- */
+.bullets{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.bullets li{padding-left:18px;position:relative;color:var(--on-paper-body);font-size:.92rem;}
+.bullets li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;background:var(--green);}
+.bullets li strong{color:var(--navy);display:block;font-size:.95rem;margin-bottom:2px;}
+.bg-navy .bullets li{color:var(--on-navy-body);}
+.bg-navy .bullets li strong{color:var(--white);}
+.bg-navy .bullets li::before{background:var(--gold);}
+
+/* ---- pillar block (services page) ---- */
+.pillar{padding:44px 0;border-top:1px solid var(--hairline);}
+.pillar:first-child{border-top:none;padding-top:0;}
+.pillar .eyebrow-en{color:var(--meta);font-size:.82rem;font-style:italic;margin-bottom:10px;}
+.pillar h3{color:var(--navy);font-size:1.35rem;margin-bottom:14px;}
+.pillar > p{color:var(--on-paper-body);max-width:720px;}
+.pillar .grid-sub{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:24px;}
+@media(max-width:760px){.pillar .grid-sub{grid-template-columns:1fr;}}
+
+/* ---- case study proof card ---- */
+.case-card{border:1px solid var(--hairline);background:var(--white);padding:28px;}
+.case-card .region{font-size:.72rem;letter-spacing:.1em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:10px;}
+.case-card h3{color:var(--navy);font-size:1.05rem;margin-bottom:12px;}
+.case-card p{color:var(--on-paper-body);font-size:.9rem;margin:0 0 12px;}
+.case-card .result{color:var(--green);font-weight:700;font-size:.88rem;margin:0;}
+
 /* ---- report block (event write-up used on kyodo-dinner / wabitabi) ---- */
 .report-block{padding:64px 0;}
 .report-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:32px;}
