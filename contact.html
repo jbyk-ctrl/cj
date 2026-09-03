@@ -30,22 +30,19 @@
   </div>
 </header>
 
-<section class="tight bg-white" style="padding-top:56px;">
+<section class="bg-paper" style="padding:56px 0 80px;">
   <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Contact</div>
-      <h2>構想の段階から、お聞かせください。</h2>
-      <p class="sub">対象、予算、時期が未定でも構いません。現在分かっていることと、まだ決まっていないことを整理します。</p>
-    </div>
+    <div class="contact-grid">
 
-    <div class="grid grid-2" style="align-items:start;">
-      <div>
-        <h3 style="color:var(--navy);font-size:1rem;">こんなご相談を受けています</h3>
-        <ul style="list-style:none;padding:0;margin:0 0 24px;display:flex;flex-direction:column;gap:10px;">
-          <li class="card" style="padding:16px 20px;">自治体・公的機関の海外事業</li>
-          <li class="card" style="padding:16px 20px;">企業・生産者のブラジル展開</li>
-          <li class="card" style="padding:16px 20px;">郷土でぃなー・食文化企画</li>
-          <li class="card" style="padding:16px 20px;">WABITABI・人材研修</li>
+      <div class="contact-info">
+        <div class="kicker" style="font-size:.78rem;letter-spacing:.12em;font-weight:700;text-transform:uppercase;margin-bottom:14px;">Contact</div>
+        <h2>構想の段階から、<br>お聞かせください。</h2>
+        <p>対象、予算、時期が未定でも構いません。現在分かっていることと、まだ決まっていないことを整理します。</p>
+        <ul>
+          <li>自治体・公的機関の海外事業</li>
+          <li>企業・生産者のブラジル展開</li>
+          <li>郷土でぃなー・食文化企画</li>
+          <li>WABITABI・人材研修</li>
         </ul>
       </div>
 
@@ -61,13 +58,15 @@
             <option>その他</option>
           </select>
         </div>
-        <div class="form-row">
-          <label>お名前<span class="req">必須</span></label>
-          <input type="text" required placeholder="山田 太郎">
-        </div>
-        <div class="form-row">
-          <label>会社・団体名</label>
-          <input type="text" placeholder="○○株式会社／○○県○○課">
+        <div class="grid grid-2" style="gap:20px;">
+          <div class="form-row">
+            <label>お名前<span class="req">必須</span></label>
+            <input type="text" required placeholder="山田 太郎">
+          </div>
+          <div class="form-row">
+            <label>会社・団体名</label>
+            <input type="text" placeholder="○○株式会社／○○県○○課">
+          </div>
         </div>
         <div class="form-row">
           <label>メールアドレス<span class="req">必須</span></label>
@@ -77,11 +76,12 @@
           <label>ご相談内容</label>
           <textarea placeholder="対象、予算、時期が未定でも構いません。現時点でわかっていることをお書きください。"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;border:none;cursor:pointer;">入力内容を確認する</button>
+        <button type="submit" class="btn btn-green" style="width:100%;text-align:center;">入力内容を確認する</button>
         <div class="form-note" id="form-note" hidden>
           これはデモ画面です。実際の送信・確認機能は本番サイト実装時に接続します（正式公開前に送信先、個人情報保護方針、返信目安の設定が必要）。
         </div>
       </form>
+
     </div>
   </div>
 </section>
@@ -98,7 +98,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
     <div class="foot-grid">
       <div>
         <h4>Children Japan</h4>
-        <p style="color:#C7CDD8">チルドレンジャパン合同会社<br>〒862-0911 熊本県熊本市東区錦ヶ丘7番8号<br>関連グループ：ARCH GROUP（Arch Consulting Ltd.）</p>
+        <p>チルドレンジャパン合同会社<br>〒862-0911 熊本県熊本市東区錦ヶ丘7番8号<br>関連グループ：ARCH GROUP（Arch Consulting Ltd.）</p>
       </div>
       <div>
         <h4>Site Map</h4>
