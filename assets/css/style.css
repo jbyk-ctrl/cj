@@ -245,3 +245,18 @@ footer.site{background:var(--navy);color:var(--on-navy-body);padding:56px 0 28px
 .form-note{font-size:.78rem;color:var(--meta);background:var(--paper);border:1px solid var(--hairline);padding:14px 16px;margin-top:20px;}
 
 .badge-inline{display:inline-block;background:var(--paper);color:var(--meta);font-size:.72rem;padding:4px 10px;border-radius:100px;}
+
+/* ---- report block (event write-up used on kyodo-dinner / wabitabi) ---- */
+.report-block{padding:64px 0;}
+.report-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:32px;}
+@media(max-width:860px){.report-head{grid-template-columns:1fr;}}
+.report-head .gold-frame img{aspect-ratio:4/3;}
+.report-meta{font-size:.78rem;color:var(--meta);letter-spacing:.04em;margin-bottom:10px;}
+.report-head h3{color:var(--navy);font-size:1.3rem;}
+.report-head p{color:var(--on-paper-body);}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);}}
+.gallery figure{margin:0;border:1px solid var(--hairline);background:var(--white);}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.gallery figcaption{font-size:.72rem;color:var(--meta);padding:8px 10px;}
