@@ -312,6 +312,13 @@ footer.site{background:var(--navy);color:var(--on-navy-body);padding:56px 0 28px
 .pillar .grid-sub{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:24px;}
 @media(max-width:760px){.pillar .grid-sub{grid-template-columns:1fr;}}
 
+.pillar .lead-grid{display:grid;grid-template-columns:1.3fr .8fr;gap:40px;align-items:start;}
+@media(max-width:760px){.pillar .lead-grid{grid-template-columns:1fr;}}
+.pillar .lead-grid .pillar-text p{color:var(--on-paper-body);}
+.pillar .lead-grid .gold-frame{margin:0;}
+.pillar .lead-photos{display:flex;flex-direction:column;gap:20px;}
+.pillar .lead-photos .gold-frame{margin:0;}
+
 /* ---- case study proof card ---- */
 .case-card{border:1px solid var(--hairline);background:var(--white);padding:28px;}
 .case-card .region{font-size:.72rem;letter-spacing:.1em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:10px;}
