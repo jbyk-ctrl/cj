@@ -6,7 +6,7 @@
 <title>ふるさと“いいもの”展｜チルドレンジャパン リニューアル デモ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -18,6 +18,9 @@
       <span class="name">CHILDREN JAPAN</span>
       <span class="tagline">FROM JAPAN TO THE WORLD</span>
     </a>
+    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" onclick="var n=this.nextElementSibling;var open=n.classList.toggle('is-open');this.classList.toggle('is-active',open);this.setAttribute('aria-expanded',open);">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="navlinks">
       <a href="government.html">自治体向け</a>
       <a href="business.html">企業向け</a>
