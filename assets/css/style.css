@@ -126,7 +126,7 @@ header.site{
 @media(max-width:640px){.hero-text{padding:40px 24px;}}
 .hero-text .eyebrow{color:var(--on-navy-eyebrow);}
 .hero-text h1{color:var(--white);font-size:clamp(1.9rem,3vw,2.9rem);}
-.hero-text .lead{color:var(--on-navy-body);font-size:1.02rem;max-width:480px;}
+.hero-text .lead{color:var(--on-navy-body);font-size:1.02rem;max-width:560px;}
 .hero-note{margin-top:18px;font-size:.8rem;color:var(--on-navy-note);}
 
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
