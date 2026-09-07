@@ -306,6 +306,16 @@ footer.site{background:var(--navy);color:var(--on-navy-body);padding:56px 0 28px
 .bg-navy .bullets li strong{color:var(--white);}
 .bg-navy .bullets li::before{background:var(--gold);}
 
+/* ---- pillar overview nav (services page top) ---- */
+.pillar-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:48px;}
+@media(max-width:860px){.pillar-nav{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.pillar-nav{grid-template-columns:1fr;}}
+.pillar-nav a{display:block;border:1px solid var(--hairline);background:var(--white);padding:22px 20px;text-decoration:none;transition:border-color .15s ease;}
+.pillar-nav a:hover{border-color:var(--green);}
+.pillar-nav .n{font-size:1.4rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:10px;}
+.pillar-nav h4{font-size:.95rem;color:var(--navy);margin:0 0 6px;}
+.pillar-nav .go{font-size:.78rem;color:var(--green);font-weight:700;}
+
 /* ---- pillar block (services page) ---- */
 .pillar{padding:44px 0;border-top:1px solid var(--hairline);}
 .pillar:first-child{border-top:none;padding-top:0;}
