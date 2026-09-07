@@ -212,7 +212,9 @@ section.tight{padding:44px 0;}
 .grid{display:grid;gap:32px;}
 .grid-2{grid-template-columns:repeat(2,1fr);}
 .grid-3{grid-template-columns:repeat(3,1fr);}
-@media(max-width:860px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+@media(max-width:860px){.grid-2,.grid-3{grid-template-columns:1fr;}.grid-4{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.grid-4{grid-template-columns:1fr;}}
 
 /* numbered feature (site strategy 01/02/03) — plain typographic block, no card box, per slide2 */
 .numbered{display:flex;flex-direction:column;}
