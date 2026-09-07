@@ -328,6 +328,7 @@ footer.site{background:var(--navy);color:var(--on-navy-body);padding:56px 0 28px
 .case-card h3{color:var(--navy);font-size:1.05rem;margin-bottom:12px;}
 .case-card p{color:var(--on-paper-body);font-size:.9rem;margin:0 0 12px;}
 .case-card .result{color:var(--green);font-weight:700;font-size:.88rem;margin:0;}
+.case-card .more{display:block;color:var(--navy);font-weight:700;font-size:.82rem;margin-top:10px;}
 .case-card .thumb{width:calc(100% + 56px);aspect-ratio:16/9;object-fit:cover;margin:-28px -28px 20px;}
 .case-card{overflow:hidden;}
 .case-card .mini-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 14px;}
