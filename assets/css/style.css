@@ -327,6 +327,32 @@ footer.site{background:var(--navy);color:var(--on-navy-body);padding:56px 0 28px
 .case-card .result{color:var(--green);font-weight:700;font-size:.88rem;margin:0;}
 .case-card .thumb{width:calc(100% + 56px);aspect-ratio:16/9;object-fit:cover;margin:-28px -28px 20px;}
 .case-card{overflow:hidden;}
+.case-card .mini-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 14px;}
+.case-card .mini-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+
+/* ---- stat bar (verified figures pulled from case copy) ---- */
+.stat-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:36px;}
+.stat-bar .stat .num{font-size:2.1rem;font-weight:700;color:var(--navy);line-height:1;margin-bottom:10px;}
+.stat-bar .stat .num span{font-size:1.1rem;font-weight:700;}
+.stat-bar .stat .cap{font-size:.86rem;color:var(--on-paper-body);}
+.bg-navy .stat-bar .stat .num{color:var(--gold);}
+.bg-navy .stat-bar .stat .cap{color:var(--white);opacity:.85;}
+
+/* ---- structured mini case (課題/アプローチ/成果) ---- */
+.case-structured{border:1px solid var(--hairline);background:var(--white);padding:28px;display:flex;flex-direction:column;gap:14px;}
+.case-structured .region{font-size:.72rem;letter-spacing:.1em;color:var(--gold);font-weight:700;text-transform:uppercase;}
+.case-structured h3{color:var(--navy);font-size:1.05rem;margin:2px 0 0;}
+.case-structured dl{margin:0;display:flex;flex-direction:column;gap:10px;}
+.case-structured dt{font-size:.75rem;font-weight:700;color:var(--green);letter-spacing:.06em;margin-bottom:3px;}
+.case-structured dd{margin:0;color:var(--on-paper-body);font-size:.9rem;}
+
+/* ---- faq ---- */
+.faq-item{border-top:1px solid var(--hairline);padding:22px 0;}
+.faq-item:last-child{padding-bottom:0;}
+.faq-item .q{color:var(--navy);font-weight:700;font-size:1rem;margin:0 0 10px;display:flex;gap:12px;}
+.faq-item .q::before{content:"Q";color:var(--gold);font-weight:900;}
+.faq-item .a{margin:0;display:flex;gap:12px;color:var(--on-paper-body);font-size:.92rem;}
+.faq-item .a::before{content:"A";color:var(--green);font-weight:900;flex-shrink:0;}
 
 /* ---- supported prefectures grid ---- */
 .pref-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:24px;}
